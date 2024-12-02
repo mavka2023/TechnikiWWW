@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>O Nas - Yoga Flow Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header_n">
+        <div class="main">
+   
+            <div class="logo">
+                <a href="index.html">
+                    <img src="photo/logo.png" alt="Yoga Flow Studio Logo">
+                </a>
+            </div> 
+
+            <div class="menu-button">
+                <button id="menu-toggle">☰</button>
+            </div>
+
+            <ul class="desktop-nav">
+                <li><a href="index.html">Główna</a></li>
+                <li class="active"><a href="about.html">O Nas</a></li>
+                <li><a href="classes.html">Zajęcia</a></li>
+                <li><a href="coach.html">Trenerzy</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="closeSidebar()">☰</button> 
+            <ul>
+                <li><a href="index.html">Główna</a></li>
+                <li class="active"><a href="about.html">O Nas</a></li>
+                <li><a href="classes.html">Zajęcia</a></li>
+                <li><a href="coach.html">Trenerzy</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="classes">
+            <h2>O Yoga Flow Studio</h2>
+            <p>W Yoga Flow Studio wierzymy, że każda osoba ma w sobie wewnętrzny spokój i siłę. Nasze zajęcia są dostosowane do każdego poziomu zaawansowania, a nasi doświadczeni instruktorzy pomogą Ci odkryć potencjał Twojego ciała i umysłu.</p>
+            <p>Nasz zespół składa się z certyfikowanych instruktorów, którzy mają pasję do jogi i dzielenia się nią z innymi. Naszym celem jest stworzenie wspierającej i przyjaznej atmosfery, w której każdy może rozwijać się w swoim własnym tempie.</p>
+        </section>
+
+        <section class="classes">
+            <h2>Nasze Przewagi</h2>
+            <ul>
+                <li><strong>Doświadczeni Instruktorzy:</strong> Nasz zespół składa się z profesjonalnych, certyfikowanych instruktorów z wieloletnim doświadczeniem.</li>
+                <li><strong>Indywidualne Podejście:</strong> Dostosowujemy nasze zajęcia do potrzeb każdego uczestnika, zapewniając spersonalizowane doświadczenia.</li>
+                <li><strong>Różnorodność Stylów:</strong> Oferujemy różne style jogi, w tym Hatha, Vinyasa, Yin oraz wiele innych, aby zaspokoić różnorodne preferencje naszych klientów.</li>
+                <li><strong>Wspólnota:</strong> Budujemy silną społeczność, gdzie uczestnicy mogą dzielić się swoimi doświadczeniami i wzajemnie się wspierać.</li>
+                <li><strong>Elastyczny Grafik:</strong> Proponujemy elastyczny grafik zajęć, aby każdy mógł znaleźć odpowiedni czas na praktykę jogi.</li>
+            </ul>
+            <p>Działamy na rynku od ponad 10 lat, przez co zyskaliśmy zaufanie naszych klientów oraz uznanie w lokalnej społeczności. Nasze studio stało się miejscem, gdzie ludzie łączą się, dzielą swoimi doświadczeniami i wspierają się nawzajem w dążeniu do harmonii i równowagi w życiu.</p>
+            <p>W ciągu ostatniej dekady zorganizowaliśmy wiele warsztatów, sesji jogi na świeżym powietrzu oraz wydarzeń specjalnych, które przyciągnęły entuzjastów jogi z całego regionu. Nasza oferta obejmuje różnorodne style jogi, w tym Hatha, Vinyasa oraz Yin, co pozwala naszym uczestnikom na eksplorację różnych form praktyki.</p>
+            <div class="onas">
+                <img src="photo/onas.jpg" alt="o nas" class="studio-image">
+            </div>
+            <p>Wierzymy, że joga to nie tylko ćwiczenia fizyczne, ale także droga do samopoznania i rozwoju osobistego. Każda sesja w naszym studio jest zaprojektowana tak, aby inspirować, motywować i wspierać w dążeniu do lepszego życia.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="photo/logo.png" alt="Yoga Flow Studio Logo">
+            </div>
+            <div class="contact-f">
+                <p>Telefon: +48 111 222 333</p>
+                <p>&copy; 2024 Yoga Flow Studio</p>
+            </div>
+        </div>
+    </footer>
+    
+        <script>
+            const menuToggle = document.getElementById("menu-toggle");
+            const sidebar = document.getElementById("sidebar");
+        
+            menuToggle.addEventListener("click", function() {
+                sidebar.classList.toggle("active");
+            });
+        
+            function closeSidebar() {
+                sidebar.classList.remove("active");
+            }
+        </script>
+        
+</body>
+</html>
