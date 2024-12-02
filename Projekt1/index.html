@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Yoga Flow Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="photo/logo.png" alt="Yoga Flow Studio Logo">
+                </a>
+            </div> 
+            
+            <div class="menu-button">
+                <button id="menu-toggle">☰</button>
+            </div>
+
+            <ul class="desktop-nav">
+                <li class="active"><a href="index.html">Główna</a></li>
+                <li><a href="about.html">O Nas</a></li>
+                <li><a href="classes.html">Zajęcia</a></li>
+                <li><a href="coach.html">Trenerzy</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="closeSidebar()">☰</button> 
+            <ul>
+                <li class="active"><a href="index.html">Główna</a></li>
+                <li><a href="about.html">O Nas</a></li>
+                <li><a href="classes.html">Zajęcia</a></li>
+                <li><a href="coach.html">Trenerzy</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="title">
+            <h1>Yoga Flow Studio</h1>
+        </div>
+        <div class="button">
+            <a href="#about" class="btn">POZNAJMY SIĘ</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about"> 
+            <h2>O Nas</h2>
+            <p>W Yoga Flow Studio wierzymy, że każda osoba ma w sobie wewnętrzny spokój i siłę.</p>
+            <p>Nasze zajęcia są dostosowane do każdego poziomu zaawansowania, a nasi doświadczeni instruktorzy pomogą Ci odkryć potencjał Twojego ciała i umysłu.</p>
+            <p>Nasze studio znajduje się w malowniczej okolicy górskiej, gdzie natura spotyka się z harmonią. To idealne miejsce, by odciąć się od zgiełku miasta, zrelaksować się i skupić na sobie. Zajęcia w naszym studiu odbywają się w spokojnej atmosferze, gdzie każdy uczestnik może poczuć się komfortowo i bezpiecznie, niezależnie od poziomu zaawansowania.</p>
+        </section>
+        
+        <section class="classes">
+            <h2>Nasze Zajęcia</h2>
+            <ul>
+                <li><strong>Joga dla początkujących:</strong> Idealna dla osób, które dopiero zaczynają swoją przygodę z jogą.</li>
+                <li><strong>Hatha Joga:</strong> Klasyczny styl jogi, który łączy postawy z technikami oddechowymi.</li>
+                <li><strong>Joga Iyengara:</strong> Skupiająca się na precyzyjnym ustawieniu ciała w pozycjach.</li>
+                <li><strong>Ashtanga Joga:</strong> Dynamiczny styl jogi, który łączy ruch z oddechem.</li>
+                <li><strong>Joga w ruchu:</strong> Zajęcia oparte na płynnych ruchach i improwizacji.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="photo/logo.png" alt="Yoga Flow Studio Logo">
+            </div>
+            <div class="contact-f">
+                <p>Telefon: +48 111 222 333</p>
+                <p>&copy; 2024 Yoga Flow Studio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const sidebar = document.getElementById("sidebar");
+    
+        menuToggle.addEventListener("click", function() {
+            sidebar.classList.toggle("active");
+        });
+    
+        function closeSidebar() {
+            sidebar.classList.remove("active");
+        }
+    </script>
+    
+</body>
+</html>

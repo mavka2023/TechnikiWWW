@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Kontakt - Yoga Flow Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header_n">
+        <div class="main">
+        
+            <div class="logo">
+                <a href="index.html">
+                    <img src="photo/logo.png" alt="Yoga Flow Studio Logo">
+                </a>
+            </div> 
+            
+            <div class="menu-button">
+                <button id="menu-toggle">☰</button>
+            </div>
+
+            <ul class="desktop-nav">
+                <li ><a href="index.html">Główna</a></li>
+                <li><a href="about.html">O Nas</a></li>
+                <li><a href="classes.html">Zajęcia</a></li>
+                <li><a href="coach.html">Trenerzy</a></li>
+                <li class="active"><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="closeSidebar()">☰</button> 
+            <ul>
+                <li ><a href="index.html">Główna</a></li>
+                <li><a href="about.html">O Nas</a></li>
+                <li><a href="classes.html">Zajęcia</a></li>
+                <li><a href="coach.html">Trenerzy</a></li>
+                <li class="active"><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Dane Kontaktowe</h2>
+                <p><strong>Adres:</strong> ul. Przykładowa 15, 00-123 Kraków</p>
+                <p><strong>Telefon:</strong> +48 111 222 333</p>
+                <p><strong>Email:</strong> kontakt@yogaflowstudio.pl</p>
+        </section>
+        <section class="contact-info">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d307851.49500047654!2d19.61326738299116!3d49.74775293097421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1731235050780!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> 
+                    </iframe>
+                </div>
+                <div class="house">
+                    <img src="photo/house.jpg" alt="house" class="studio-image">
+                </div>
+                <p>Zapraszamy do kontaktu telefonicznego lub mailowego w godzinach naszej pracy. Z radością odpowiemy na wszystkie pytania dotyczące zajęć, naszych trenerów oraz członkostwa.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="photo/logo.png" alt="Yoga Flow Studio Logo">
+            </div>
+            <div class="contact-f">
+                <p>Telefon: +48 111 222 333</p>
+                <p>&copy; 2024 Yoga Flow Studio</p>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+            const menuToggle = document.getElementById("menu-toggle");
+            const sidebar = document.getElementById("sidebar");
+        
+            menuToggle.addEventListener("click", function() {
+                sidebar.classList.toggle("active");
+            });
+        
+            function closeSidebar() {
+                sidebar.classList.remove("active");
+            }
+        </script>
+        
+</body>
+</html>
